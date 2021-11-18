@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/media.css">
+    
+        <link rel="shortcut icon" href="https://iconarchive.com/download/i103804/custom-icon-design/flatastic-7/Laptop.ico" type="image/x-icon">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <title>Сайт</title>
+    </head>
+<body>
+    
+    <div id="app">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__top">
+                    <h1 class="header__title">Портфолио frontend-разработчика</h1>
+                    <div class="header__contact"><button class="header__contact-btn" id="open-popup">Связаться со мной</button></div>
+                </div>
+                <div class="header__person">
+                    <div class="header__person-icon">
+                        <img src="https://trikky.ru/wp-content/blogs.dir/1/files/2020/06/10/d9b97b5646fbb691e29947a921049a1d.jpg" alt="Аватар" class="header__person-icon-img">
+                    </div>
+                    <div class="header__person-name">Дмитрий Федорченко</div>
+                </div>
+            </div>
+        </header>
+    
+        <main class="container main">
+    
+            <div class="main-sidebar">
+    
+                <div class="sidebar">
+                    <div class="sidebar__block">
+                        <h2 class="sidebar__title">Контакты</h2>
+                        <ul class="sidebar__contact-list">
+                            <li class="sidebar__contact-list-item"><a href="https://t.me/agentdmitro" class="sidebar__contact-list-link" id="telegram" target="_blank">t.me/agentdmitro</a></li>
+                            <li class="sidebar__contact-list-item"><a href="https://www.instagram.com/agent.dmitro/" class="sidebar__contact-list-link" id="instagram" target="_blank">@agent.dmitro</a></li>
+                            <li class="sidebar__contact-list-item"><a href="mailto:agentdmitro@gmail.com" class="sidebar__contact-list-link" id="mail" target="_blank">agentdmitro@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__block sidebar__block-works">
+                        <div class="sidebar__works"><div class="sidebar__works-title">Всего работ:</div>  <span class="sidebar__works-count">20</span></div>
+                    </div>
+                    <div class="sidebar__block">
+                        <div class="sidebar__about">
+                            <h2 class="sidebar__about-title">Обо мне</h2>
+                            <p class="sidebar__about-text">Веб-верстальщик с опытом работы более года, за всё время я помог запустить более 10 проектов своим заказчикам и каждый из них был доволен моей работой. Мой гитхаб репозиторий содержит уже более 40 сайтов. Разрабатываю сайты любой сложности: от простых лендингов до интернет-магазинов. Цена всегда зависит от масштаба работы. </p>
+                        </div>
+                    </div>
+                    <div class="sidebar__block">
+                        <div class="sidebar__descr">Немного больше обо мне можно узнать из моего аккаунта weblancer: <a target="_blank" href="https://www.weblancer.net/users/agentdmitro/">клик</a></div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="main-projects">
+                <div class="projects__inner">
+                    <project v-for="project in projects" v-bind:project="project"></project>
+                </div>
+                <div class="projects__descr">Больше работ можно увидеть в 
+                    <div class="projects__descr-link">
+                        <a target="_blank" href="https://github.com/agentdmitro?tab=repositories">GitHub репозитории</a>
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+    
+        <div class="popup popup__contact">
+            <button class="popup__close" id="close-popup"><span></span></button>
+            <div class="popup__inner">
+                <div class="popup__title">Контактные данные</div>
+                <div class="popup__contact-list">
+                    <a href="https://t.me/agentdmitro" class="popup__contact-link" target="_blank">
+                        <div class="popup__contact-link-img"><img src="img/contacts/1.png" alt=""></div>
+                        <div class="popup__contact-link-title">Telegram</div>
+                    </a>
+                    <a href="https://www.instagram.com/agent.dmitro/" class="popup__contact-link" target="_blank">
+                        <div class="popup__contact-link-img"><img src="img/contacts/2.png" alt=""></div>
+                        <div class="popup__contact-link-title">Instagram</div>
+                    </a>
+                    <a href="https://github.com/agentdmitro" class="popup__contact-link" target="_blank">
+                        <div class="popup__contact-link-img"><img src="img/contacts/3.png" alt=""></div>
+                        <div class="popup__contact-link-title">GitHub</div>
+                    </a>
+                    <a href="tel:+380953665852" class="popup__contact-link">
+                        <div class="popup__contact-link-img"><img src="img/contacts/4.png" alt=""></div>
+                        <div class="popup__contact-link-title">Phone</div>
+                    </a>
+                    <a href="mailto:agent.dmitro@gmail.com" class="popup__contact-link">
+                        <div class="popup__contact-link-img"><img src="img/contacts/5.png" alt=""></div>
+                        <div class="popup__contact-link-title">Gmail</div>
+                    </a>
+                    <a href="https://www.facebook.com/dmytro.fedorchenko.5/" class="popup__contact-link" target="_blank">
+                        <div class="popup__contact-link-img"><img src="img/contacts/6.png" alt=""></div>
+                        <div class="popup__contact-link-title">Facebook</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg"></div>
+    
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
