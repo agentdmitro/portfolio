@@ -7,6 +7,10 @@
   .project__box {
     width: calc(100% - 2rem);
   }
+
+  .project__box:nth-child(2) {
+    margin-top: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -61,6 +65,7 @@
 
   .main-sidebar {
     margin: 0;
+    position: static;
   }
 
   .main-projects {

@@ -41,10 +41,12 @@ const app = new Vue({
 
     function bgRemove() {
         $('.bg').removeClass('show');
+        $('body').toggleClass('lock')
         
     }
     function bgAdd() {
         $('.bg').toggleClass('show');
+        $('body').toggleClass('lock')
     }
     
     $('#open-popup').click(function (e) {
@@ -70,3 +72,13 @@ const app = new Vue({
             bgRemove();
         }
     })
+
+    // $(document).on('click', function(e){
+    //     console.log(e.target);
+    //     if($('.popup').hasClass('show')){
+    //         if((e.target.className != "popup__inner")){
+    //             bgRemove()
+    //             $('.popup').removeClass('show');
+    //         }
+    //     }
+    // })

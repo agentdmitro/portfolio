@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-        <title>Сайт</title>
+        <title>Портфолио</title>
     </head>
 <body>
     
@@ -20,7 +20,7 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__top">
-                    <h1 class="header__title">Портфолио frontend-разработчика</h1>
+                    <!-- <h1 class="header__title">Портфолио frontend-разработчика</h1> -->
                     <div class="header__contact"><button class="header__contact-btn" id="open-popup">Связаться со мной</button></div>
                 </div>
                 <div class="header__person">
@@ -40,9 +40,9 @@
                     <div class="sidebar__block">
                         <h2 class="sidebar__title">Контакты</h2>
                         <ul class="sidebar__contact-list">
-                            <li class="sidebar__contact-list-item"><a href="https://t.me/agentdmitro" class="sidebar__contact-list-link" id="telegram" target="_blank">t.me/agentdmitro</a></li>
-                            <li class="sidebar__contact-list-item"><a href="https://www.instagram.com/agent.dmitro/" class="sidebar__contact-list-link" id="instagram" target="_blank">@agent.dmitro</a></li>
-                            <li class="sidebar__contact-list-item"><a href="mailto:agentdmitro@gmail.com" class="sidebar__contact-list-link" id="mail" target="_blank">agentdmitro@gmail.com</a></li>
+                            <li class="sidebar__contact-list-item"><a href="https://t.me/agentdmitro" class="sidebar__contact-list-link" id="telegram" target="_blank"><img src="img/contacts/1.png" alt=""> t.me/agentdmitro</a></li>
+                            <li class="sidebar__contact-list-item"> <a href="https://www.instagram.com/agent.dmitro/" class="sidebar__contact-list-link" id="instagram" target="_blank"><img src="img/contacts/2.png" alt="">@agent.dmitro</a></li>
+                            <li class="sidebar__contact-list-item"> <a href="mailto:agentdmitro@gmail.com" class="sidebar__contact-list-link" id="mail" target="_blank"><img src="img/contacts/5.png" alt="">agentdmitro@gmail.com</a></li>
                         </ul>
                     </div>
                     <div class="sidebar__block sidebar__block-works">
@@ -64,9 +64,10 @@
                 <div class="projects__inner">
                     <project v-for="project in projects" v-bind:project="project"></project>
                 </div>
-                <div class="projects__descr">Больше работ можно увидеть в 
-                    <div class="projects__descr-link">
-                        <a target="_blank" href="https://github.com/agentdmitro?tab=repositories">GitHub репозитории</a>
+                <div class="projects__descr">
+                    <p class="projects__descr-text">Больше работ можно увидеть в </p>
+                    <div class="projects__descr-btn">
+                        <a class="projects__descr-link" target="_blank" href="https://github.com/agentdmitro?tab=repositories">GitHub репозитории</a>
                     </div>
                 </div>
             </div>
